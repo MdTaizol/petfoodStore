@@ -1,0 +1,175 @@
+body{
+
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+
+}
+
+
+.about-container{
+
+    width:85%;
+    margin:50px auto;
+
+}
+
+
+
+.about-header{
+
+    background:#27ae60;
+    color:white;
+    padding:50px;
+    text-align:center;
+    border-radius:15px;
+
+}
+
+
+.about-header h1{
+
+    font-size:40px;
+
+}
+
+
+.about-header p{
+
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+
+
+/* Products */
+
+.product-section{
+
+    margin-top:40px;
+    text-align:center;
+
+}
+
+
+
+.product-section h2{
+
+    color:#2c3e50;
+    font-size:32px;
+
+}
+
+
+
+.product-container{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+
+}
+
+
+
+.product-card{
+
+    background:white;
+    width:220px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 12px #ccc;
+
+}
+
+
+
+.product-card h3{
+
+    color:#27ae60;
+
+}
+
+
+
+.product-card p{
+
+    color:#555;
+    line-height:1.5;
+
+}
+
+
+
+
+/* Location */
+
+
+.location-section{
+
+    margin-top:50px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 0 12px #ccc;
+    text-align:center;
+
+}
+
+
+
+.location-section h2{
+
+    color:#2c3e50;
+
+}
+
+
+
+.location-section p{
+
+    font-size:18px;
+    color:#555;
+
+}
+
+
+
+.map-btn{
+
+    display:inline-block;
+    margin-top:20px;
+    background:#27ae60;
+    color:white;
+    padding:12px 30px;
+    border-radius:6px;
+    text-decoration:none;
+
+}
+
+
+
+.map-btn:hover{
+
+    background:#219150;
+
+}
+
+
+
+/* Mission */
+
+
+.mission{
+
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+
+}

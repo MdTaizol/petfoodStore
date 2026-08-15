@@ -1,0 +1,173 @@
+body{
+
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+
+}
+
+
+h1{
+
+    text-align:center;
+    color:#2c3e50;
+
+}
+
+
+/* Common Card */
+
+.card{
+
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px #ccc;
+
+}
+
+
+
+.container{
+
+    width:80%;
+    margin:auto;
+
+}
+
+
+
+/* Common Button */
+
+.btn{
+
+    background:#27ae60;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+
+}
+
+
+
+.btn:hover{
+
+    background:#219150;
+
+}
+
+
+
+/* Profile */
+
+.profile-card{
+
+    width:400px;
+    margin:80px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px #ccc;
+    text-align:center;
+
+}
+
+
+
+.info{
+
+    text-align:left;
+    font-size:18px;
+    line-height:35px;
+
+}
+
+
+
+
+
+/* Navbar */
+
+
+.navbar{
+
+    background:#27ae60;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+
+.logo{
+
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+
+}
+
+
+
+.navbar a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-size:16px;
+
+}
+
+
+
+.navbar a:hover{
+
+    color:#f1c40f;
+
+}
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+
+.navbar a{
+
+    display:block;
+    margin:10px;
+
+}
+
+
+.container{
+
+    width:95%;
+
+}
+
+
+.profile-card{
+
+    width:80%;
+
+}
+
+
+}

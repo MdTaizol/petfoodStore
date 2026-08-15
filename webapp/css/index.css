@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f7f7;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    background:#27ae60;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd43b;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    width:100%;
+    min-height:520px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/pet-banner.jpg") center center no-repeat;
+
+    background-size:cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:30px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.shop-btn{
+    display:inline-block;
+    padding:15px 40px;
+    border-radius:8px;
+    background:#27ae60;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#1d8f4f;
+    transform:scale(1.05);
+}
+
+/* ================= CATEGORY ================= */
+
+.category-title{
+    text-align:center;
+    font-size:38px;
+    color:#2c3e50;
+    margin:60px 0 40px;
+}
+
+.category-container{
+
+    max-width:1200px;
+
+    margin:0 auto 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+    padding:0 20px;
+
+}
+
+/* CARD */
+
+.category-card,
+.category-card:link,
+.category-card:visited{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:260px;
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.emoji{
+
+    font-size:60px;
+
+    margin-bottom:18px;
+}
+
+.category-card h3{
+
+    color:#27ae60;
+
+    font-size:26px;
+
+    margin-bottom:10px;
+
+    text-decoration:none;
+}
+
+.category-card p{
+
+    color:#666;
+
+    line-height:24px;
+
+    text-decoration:none;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+
+    background:#2c3e50;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 25px;
+}
+
+.about a{
+
+    color:#ffd43b;
+
+    text-decoration:none;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    width:100%;
+
+    background:#1f2d3d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.footer h2{
+    margin-bottom:15px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+.hero{
+
+min-height:430px;
+
+}
+
+.hero-content h1{
+
+font-size:40px;
+
+}
+
+.hero-content p{
+
+font-size:20px;
+
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.logo{
+
+margin-bottom:15px;
+
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:12px;
+
+}
+
+.hero{
+
+min-height:350px;
+
+}
+
+.hero-content h1{
+
+font-size:30px;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+}
+
+.shop-btn{
+
+padding:12px 28px;
+
+font-size:16px;
+
+}
+
+.category-title{
+
+font-size:30px;
+
+}
+
+.category-container{
+
+grid-template-columns:1fr;
+
+}
+
+.category-card{
+
+min-height:220px;
+
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.hero{
+
+min-height:300px;
+
+}
+
+.hero-content h1{
+
+font-size:24px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+.shop-btn{
+
+width:100%;
+
+}
+
+}
